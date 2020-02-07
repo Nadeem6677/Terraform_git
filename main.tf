@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_elb" "ofe-elb1" {
-  name = "Terraform_balancer1"
+  name = "Terraform_balancer"
   availability_zones = ["us-east-2a", "us-east-2b"]
   security_groups = ["sg-066802a095641abb3", "sg-151d0576"]
   listener {
